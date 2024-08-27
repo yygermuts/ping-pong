@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Pong Game</title>
+    <style>
+        canvas {
+            display: block;
+            margin: 0 auto;
+            background-color: #000;
+        }
+        .scoreboard {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+        }
+        .difficulty-control {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="scoreboard">
+        <h1>Player: <span id="playerScore">0</span> | Computer: <span id="computerScore">0</span></h1>
+    </div>
+    <div class="difficulty-control">
+        <label for="difficulty">Difficulty: </label>
+        <select id="difficulty">
+            <option value="1">Easy</option>
+            <option value="2">Medium</option>
+            <option value="3">Hard</option>
+        </select>
+    </div>
+    <canvas id="pingPongCanvas" width="800" height="600"></canvas>
+    <script src="/script.js"></script>
+</body>
+</html>
